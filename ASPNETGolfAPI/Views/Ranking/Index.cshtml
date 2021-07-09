@@ -1,0 +1,21 @@
+﻿@model IEnumerable<Ranking>
+
+
+<h2>Golf Rankings</h2>
+<table class="table">
+    <tr>
+        <th>Player</th>
+        <th>Position</th>
+        <th>Wins</th>
+    </tr>
+   
+        @foreach (var player in Model)
+        {
+            <tr>
+            <td>@player.player_name</td>
+            <td>@player.position</td>
+            <td>@player.num_wins</td>
+                </tr>
+        }
+    
+</table>
